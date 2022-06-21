@@ -53,7 +53,7 @@ class Enemie {
 
 function generateEnemie() {
     let x = Math.floor(Math.random() * (width - 20));
-    let speed = Math.floor(Math.random() * 5);
+    let speed = Math.floor(Math.random() * 7);
     let y = 0;
     let w = 20;
     let h = 20;
@@ -189,7 +189,7 @@ setInterval(() => {
         game.level += 1;
         level.innerHTML = game.level;
     }
-}, 5000);
+}, 4000);
 
 setInterval(() => {
     if (!game_over) {
